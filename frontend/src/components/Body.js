@@ -25,6 +25,7 @@ const Body = () => {
         try {
             // const data = await fetch("https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.96340&lng=77.58550&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
             const data = await fetch("https://cravingsproxyserver.onrender.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.96340&lng=77.58550&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+            // const data = await fetch("http://localhost:8080/https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.96340&lng=77.58550&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
             const json = await data.json();
             setSearchResult(false);
             setlistOfRestaurant(json.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants || json.data.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
@@ -64,7 +65,7 @@ const Body = () => {
 
                 <div className="flex flex-col items-center space-x-4 sm:flex-row sm:justify-center">
                     {/* input */}
-                    <input type="text" data-testid="inputBox" className="border border-black mb-3 w-64 p-2 sm:w-80 rounded-sm sm:h-8 sm:mb-0" placeholder="Craving something? Search here!" value={searchText} onChange={(e) => {
+                    <input type="text" data-testid="inputBox" className="border-2 border-orange-500 mb-3 w-64 p-2 sm:w-80 rounded-lg sm:h-8 sm:mb-0" placeholder="Craving something? Search here!" value={searchText} onChange={(e) => {
                         setsearchText(e.target.value);
                     }} />
                     <div className="flex gap-2">

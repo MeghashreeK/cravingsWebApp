@@ -47,16 +47,16 @@ const RestaurantMenu = () => {
                             <p>{lastMileTravelString} | {deliveryTime} mins</p>
                         </div>
                     </div>
-                        <div className="flex flex-col justify-center items-center border h-1/2 p-2">
+                    <div className="flex flex-col justify-center items-center border h-1/2 p-2">
 
-                            <div className="flex items-center gap-1 border-b">
-                                <img className="w-[0.9em] h-[0.9em]" src={greenstar} alt="greenstar" />
-                                <p className="text-[#3D9B6D] font-bold">{avgRating}</p>
-                            </div>
-                            <div className="flex">
-                                <p className="text-gray-400 font-bold text-[10px]">{totalRatingsString}</p>
-                            </div>
+                        <div className="flex items-center gap-1 border-b">
+                            <img className="w-[0.9em] h-[0.9em]" src={greenstar} alt="greenstar" />
+                            <p className="text-[#3D9B6D] font-bold">{avgRating}</p>
                         </div>
+                        <div className="flex">
+                            <p className="text-gray-400 font-bold text-[10px]">{totalRatingsString}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             {categories.length > 0 && categories?.map((category, index) => <RestaurantCategory
@@ -75,6 +75,6 @@ const RestaurantMenu = () => {
 
 
 }
-export default RestaurantMenu;
 
+export default RestaurantMenu;
 

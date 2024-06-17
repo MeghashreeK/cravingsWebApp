@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import veg from "../images/veg.png";
 import nonveg from "../images/nonveg.png";
 
-const ItemList = ({ items }) => {
+const ItemList = ({ items}) => {
     const [itemState, setItemState] = useState([])
     const dispatch = useDispatch();
     const cartItems = useSelector((store) => store.cart.items);
@@ -91,6 +91,5 @@ const ItemList = ({ items }) => {
     );
 }
 export default ItemList;
-
 
 
