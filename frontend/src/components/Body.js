@@ -107,7 +107,7 @@ const Body = () => {
                     {/* topratedbutton */}
                     <button className=" hidden sm:bg-orange-500 sm:flex sm:text-black  sm:w-70 sm:px-10 sm:rounded-lg sm:justify-center sm:items-center" onClick={
                         () => {
-                            let filteredList = listOfRestaurant.filter((res) => res.info.avgRating > 4.5);
+                            let filteredList = listOfRestaurant.filter((res) => res.info.avgRating > 4.2);
                             setfilteredRestaurant(filteredList);
                         }}>Top Rated Restaurants
                     </button>
