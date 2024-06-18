@@ -79,7 +79,7 @@ const Body = () => {
                             {filterOptions && (<div className="flex flex-col gap-2">
                                 <button className=" bg-orange-400 rounded-lg px-2" onClick={
                                     () => {
-                                        let filteredList = listOfRestaurant.filter((res) => res.info.avgRating > 4.5);
+                                        let filteredList = listOfRestaurant.filter((res) => res.info.avgRating > 4.2);
                                         setfilteredRestaurant(filteredList);
                                     }}>Top Rated</button>
                                 <button className=" bg-orange-400 rounded-lg px-2" onClick={
