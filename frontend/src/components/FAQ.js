@@ -21,6 +21,7 @@ const FAQ = () => {
     const fetchFaqData = async () => {
         try{
         const data = await fetch("https://cravingsproxyserver.onrender.com/https://www.swiggy.com/dapi/support/issues/faq?");
+        // const data = await fetch("http://localhost:8080/https://www.swiggy.com/dapi/support/issues/faq?");
         const json = await data.json();
         setFaqData(json.data.issues.data);
         }

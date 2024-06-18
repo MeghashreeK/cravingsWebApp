@@ -76,7 +76,7 @@ const ItemList = ({ items}) => {
                         {!item.count && (<button className="border px-3 sm:px-5 rounded-lg bg-orange-400 " onClick={() => { handleAddItem(item) }}>Add+</button>)}
 
                         {item.count &&
-                            (<div className="border border-orange-400 px-2 rounded-lg">
+                            (<div className="border border-orange-400 px-2 rounded-lg text-center">
                                 <button className="px-5" onClick={() => subQuantity(item)}>-</button>
                                 {item.count}
                                 <button className="px-5" onClick={() => handleAddItem(item)}>+</button>
