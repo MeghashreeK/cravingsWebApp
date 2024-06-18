@@ -64,7 +64,7 @@ const Body = () => {
 
                 <div className="flex flex-col items-center space-x-4 sm:flex-row sm:justify-center">
                     {/* input */}
-                    <input type="text" data-testid="inputBox" className="border-2 border-orange-500 mb-3 w-64 p-2 sm:w-80 rounded-lg sm:h-8 sm:mb-0" placeholder="Craving something? Search here!" value={searchText} onChange={(e) => {
+                    <input type="text" data-testid="inputBox" className="border-2 border-orange-500 mb-3 w-64 p-2 sm:w-80 rounded-lg sm:h-8 sm:mb-0 focus:outline-orange-500" placeholder="Craving something? Search here!" value={searchText} onChange={(e) => {
                         setsearchText(e.target.value);
                     }} />
                     <div className="flex gap-2">
