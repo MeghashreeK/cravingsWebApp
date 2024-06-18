@@ -16,7 +16,7 @@ const Home = () => {
                     <h1 className="font-Montserrat italic text-orange-500 text-[13px] sm:text-[20px]">Delivering your desired food right to your doorstep.</h1>
                 </div>
                 <div>
-                    <Link to="/restaurants"><button className="border-2 font-Montserrat border-orange-400 text-orange-500 py-1 w-70 px-10 rounded-lg justify-center items-center hover:bg-orange-500 hover:text-white" >Find Your Favorite Food!</button></Link>
+                    <Link to="/restaurants"><button className="border-2 font-Montserrat border-orange-400 text-orange-500 py-1 w-70 px-10 rounded-lg justify-center items-center hover:bg-orange-500 hover:text-white" >Find Your Favourite Food!</button></Link>
                 </div>
             </div>
 
