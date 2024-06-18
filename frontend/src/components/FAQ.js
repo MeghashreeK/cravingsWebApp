@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import uparrow from "../images/up-arrow.png";
 import ShimmerFAQ from "./ShimmerFAQ";
 import ErrorAPI from "./ErrorAPI";
+import { FAQ } from "../utils/constants";
 
 const FAQ = () => {
     const [answer, setAnswer] = useState(false);
@@ -20,8 +21,7 @@ const FAQ = () => {
 
     const fetchFaqData = async () => {
         try{
-        const data = await fetch("https://cravingsproxyserver.onrender.com/https://www.swiggy.com/dapi/support/issues/faq?");
-        // const data = await fetch("http://localhost:8080/https://www.swiggy.com/dapi/support/issues/faq?");
+        const data = await fetch(FAQ);
         const json = await data.json();
         setFaqData(json.data.issues.data);
         }
